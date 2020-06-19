@@ -1,0 +1,33 @@
+<animated-vector
+    xmlns:android='http://schemas.android.com/apk/res/android'
+    xmlns:aapt='http://schemas.android.com/aapt'>
+    <aapt:attr name='android:drawable'>
+        <vector
+            android:name='vector'
+            android:width='200dp'
+            android:height='200dp'
+            android:viewportWidth='200'
+            android:viewportHeight='200'>
+            <group
+                android:name='group'
+                android:pivotX='100'
+                android:pivotY='83.333'>
+                <path
+                    android:name='path_1_1'
+                    android:pathData='M 91.67 100 C 91.67 95 95 91.67 100 91.67 C 105 91.67 108.33 95 108.33 100 C 108.33 105 105 108.33 100 108.33 C 95 108.33 91.67 105 91.67 100'
+                    android:fillColor='#000000'/>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name='path_1_1'>
+        <aapt:attr name='android:animation'>
+            <objectAnimator
+                android:propertyName='pathData'
+                android:duration='200'
+                android:valueFrom='M 91.67 100 C 91.67 95 95 91.67 100 91.67 C 105 91.67 108.33 95 108.33 100 C 108.33 105 105 108.33 100 108.33 C 95 108.33 91.67 105 91.67 100'
+                android:valueTo='M 70.83 37.5 C 70.83 21.38 83.88 8.33 100 8.33 C 116.13 8.33 129.17 21.38 129.17 37.5 C 129.17 55.21 100 83.33 100 83.33 C 100 83.33 70.83 55.21 70.83 37.5'
+                android:valueType='pathType'
+                android:interpolator='@android:interpolator/fast_out_slow_in'/>
+        </aapt:attr>
+    </target>
+</animated-vector>

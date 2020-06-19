@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:background="#E36B63"
+		android:layout_marginBottom="8dp"
+		android:id="@+id/colorpickerview_colorView"/>
+
+	<com.itsaky.colorpicker.ColorPickerSeekbar
+		android:layout_width="match_parent"
+		android:layout_height="20dp"
+		android:max="66"
+		android:thumb="@drawable/seekbar_thumb_vector"
+		android:thumbTint="@color/accent"
+		android:background="@null"
+		android:splitTrack="false"
+		android:id="@+id/colorpickerview_alphaSeek"
+		android:layout_marginBottom="16dp"
+		android:layout_marginTop="16dp"/>
+
+	<com.itsaky.colorpicker.ColorPickerSeekbar
+		android:id="@+id/colorpickerview_redSeek"
+		android:layout_width="match_parent"
+		android:layout_height="20dp"
+		android:max="66"
+		android:thumb="@drawable/seekbar_thumb_vector"
+		android:thumbTint="@color/accent"
+		android:background="@null"
+		android:splitTrack="false"
+		android:layout_marginBottom="16dp"/>
+
+	<com.itsaky.colorpicker.ColorPickerSeekbar
+		android:id="@+id/colorpickerview_greenSeek"
+		android:layout_width="match_parent"
+		android:layout_height="20dp"
+		android:max="66"
+		android:thumb="@drawable/seekbar_thumb_vector"
+		android:thumbTint="@color/accent"
+		android:background="@null"
+		android:splitTrack="false"
+		android:layout_marginBottom="16dp"/>
+
+	<com.itsaky.colorpicker.ColorPickerSeekbar
+		android:id="@+id/colorpickerview_blueSeek"
+		android:layout_width="match_parent"
+		android:layout_height="20dp"
+		android:max="66"
+		android:thumb="@drawable/seekbar_thumb_vector"
+		android:thumbTint="@color/accent"
+		android:background="@null"
+		android:splitTrack="false"/>
+
+	<RelativeLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="30dp"
+			android:text="#"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:gravity="center"
+			android:id="@+id/layoutcolorpickerviewTextView1"
+			android:layout_centerVertical="true"/>
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:hint="Hex Color"
+			android:maxLength="8"
+			android:layout_toRightOf="@id/layoutcolorpickerviewTextView1"
+			android:layout_centerVertical="true"
+			android:id="@+id/colorpickerview_hexCode"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Pick"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:id="@+id/colorpickerview_pickButton"/>
+
+	</RelativeLayout>
+
+</LinearLayout>
+
