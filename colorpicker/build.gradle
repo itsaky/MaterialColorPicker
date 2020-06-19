@@ -4,16 +4,20 @@ android {
     compileSdkVersion 29
 buildToolsVersion "29.0.0"
     defaultConfig {
-        applicationId "com.itsaky.colorpicker"
+
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
     buildTypes {
+        debug {
+            minifyEnabled false
+            debuggable false
+        }
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
         }
     }
 }
