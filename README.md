@@ -1,11 +1,9 @@
 # MaterialColorPicker
-[![license](https://img.shields.io/github/license/itsaky/MaterialColorPicker.svg?style=flat-square)](https://github.com/itsaky/MaterialColorPicker/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/itsaky/MaterialColorPicker.svg?style=flat-square)](https://github.com/itsaky/MaterialColorPicker/blob/master/LICENSE) [![](https://jitpack.io/v/itsaky/MaterialColorPicker.svg)](https://jitpack.io/#itsaky/MaterialColorPicker)
 
 MaterialColorPicker made for Android. Written in Java with [AIDE](https://play.google.com/store/apps/details?id=com.aide.ui)
 
 ## Download
-
-[![](https://jitpack.io/v/itsaky/MaterialColorPicker.svg)](https://jitpack.io/#itsaky/MaterialColorPicker)
 
 Add it in your root build.gradle at the end of repositories:
 ```
@@ -48,7 +46,7 @@ dependencies {
   - **d.** 
   ```java
   // Alpha slider will be invisible
-  ColorPickerDialog view = new ColorPickerDialog(this, /*red*/ 255, /*green*/ 255, /*blue* 255);
+  ColorPickerDialog view = new ColorPickerDialog(this, /*red*/ 255, /*green*/ 255, /*blue*/ 255);
   ```
 
 ### 2. Modify values
