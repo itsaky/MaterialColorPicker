@@ -42,7 +42,7 @@ dependencies {
   - **c.** 
   ```java
   //Alpha slider will be visible
-  ColorPickerDialog view = new ColorPickerDialog(this, /*alpha*/255, /*red*/ 255, /*green*/ 255, /*blue* 255);
+  ColorPickerDialog view = new ColorPickerDialog(this, /*alpha*/255, /*red*/ 255, /*green*/ 255, /*blue*/ 255);
   ```
 
   - **d.** 
