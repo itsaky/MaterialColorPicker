@@ -49,41 +49,40 @@ dependencies {
   ColorPickerDialog view = new ColorPickerDialog(this, /*red*/ 255, /*green*/ 255, /*blue*/ 255);
   ```
 
-### 2. Modify values
-```java
-// Setters
-view.setAlpha(255);
-view.setRed(255);
-view.setGreen(255);
-view.setBlue(255);
-view.withAlpha(true); // enables alpha slider
-view.setCloseOnPicked(false); // Prevents closing of dialog when 'pick' is clicked
-```
+- **2. Modify values**
+  ```java
+  // Setters
+  view.setAlpha(255);
+  view.setRed(255);
+  view.setGreen(255);
+  view.setBlue(255);
+  view.withAlpha(true); // enables alpha slider
+  view.setCloseOnPicked(false); // Prevents closing of dialog when 'pick' is clicked
+  ```
 
-### 3. Getting values
-```java
-view.getAlpha();
-view.getRed();
-view.getGreen();
-view.getBlue();
-view.getColor(); // returns int value of current color
-view.getHexColorCode(); // if withAlpha then with alpha hex value else without it
-view.getHexWithAlpha();
-view.getHexWithoutAlpha();
-```
+- **3. Getting values**
+  ```java
+  view.getAlpha();
+  view.getRed();
+  view.getGreen();
+  view.getBlue();
+  view.getColor(); // returns int value of current color
+  view.getHexColorCode(); // if withAlpha then with alpha hex value else without it
+  view.getHexWithAlpha();
+  view.getHexWithoutAlpha();
+  ```
 
-### 4. Callback
+- **4. Callback**
 Get callback when 'pick' is clicked
-```java
-view.setColorPickerCallback(new ColorPickerDialog.ColorPickerCallback(){
-
-					@Override
-					public void onColorPicked(int color, String hexColorCode)
-					{
-						Toast.makeText(getApplicationContext(), "int[" + color + "] hex[" + hexColorCode + "]", Toast.LENGTH_LONG).show();
-					}
-				});
-```
+  ```java
+  view.setColorPickerCallback(new ColorPickerDialog.ColorPickerCallback(){
+    @Override
+    public void onColorPicked(int color, String hexColorCode)
+    {
+      Toast.makeText(getApplicationContext(), "int[" + color + "] hex[" + hexColorCode + "]", Toast.LENGTH_LONG).show();
+    }
+  });
+  ```
 
 ## License
 - [The MIT License](https://github.com/itsaky/MaterialColorPicker/blob/master/LICENSE)
