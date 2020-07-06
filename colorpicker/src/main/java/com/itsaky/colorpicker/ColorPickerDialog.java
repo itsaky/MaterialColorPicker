@@ -343,6 +343,36 @@ public class ColorPickerDialog extends Dialog implements SeekBar.OnSeekBarChange
 		mHexField.setText(getHexColorCode().replace("#", ""));
 	}
 	
+	public Button getPickButton()
+	{
+		return mPickButton;
+	}
+	
+	public ColorPickerSeekbar getAlphaSeekbar()
+	{
+		return mAlphaSeek;
+	}
+	
+	public ColorPickerSeekbar getRedSeekbar()
+	{
+		return mRedSeek;
+	}
+	
+	public ColorPickerSeekbar getGreenSeekbar()
+	{
+		return mGreenSeek;
+	}
+	
+	public ColorPickerSeekbar getBlueSeekbar()
+	{
+		return mBlueSeek;
+	}
+	
+	public EditText getHexEditText()
+	{
+		return mHexField;
+	}
+	
 	/**
 	* setters and getters for color values
 	*/
